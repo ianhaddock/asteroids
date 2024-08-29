@@ -24,7 +24,6 @@ def main():
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
 
     Shot.containers = (updatable, drawable)
-    #shot = Shot()
 
     dt = 0
 
