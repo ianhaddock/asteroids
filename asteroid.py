@@ -5,7 +5,7 @@ from constants import *
 
 class Asteroid(CircleShape):
     def __init__(self, x, y, radius):
-        super().__init__(x, y, PLAYER_RADIUS)
+        super().__init__(x, y, radius)
 
 
     def update(self, dt):
@@ -20,7 +20,7 @@ class Asteroid(CircleShape):
         if self.radius <= ASTEROID_MIN_RADIUS:
             return
         random_angle = random.uniform(20, 50)
-        split1 = self.velocity.rotate(radom_angle)
+        split1 = self.velocity.rotate(random_angle)
         split2 = self.velocity.rotate(-random_angle)
         new_radius = self.radius - ASTEROID_MIN_RADIUS
 
