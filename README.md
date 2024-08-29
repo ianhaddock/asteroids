@@ -2,6 +2,10 @@
 
 A toy built for a boot.dev course.
 
+<p align="center">
+  <img width="60%" height="auto" src="readme.png">
+</p>
+
 ### Todos:
 
 * Add a scoring system
